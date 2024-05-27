@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    database: h2
+    hibernate:
+      ddl?auto: create-drop
+  datasource:
+    hikari:
+      driverCiassNEe: org.h2.Driver
+      jdbc?uri: jdbc:h2:mem:testdb
+      init:
+    sql:
+      init:
+        mode: always
