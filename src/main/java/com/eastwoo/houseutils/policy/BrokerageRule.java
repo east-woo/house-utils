@@ -1,6 +1,7 @@
 package com.eastwoo.houseutils.policy;
 
 import lombok.AllArgsConstructor;
+import org.springframework.lang.Nullable;
 
 /**
  * packageName    : com.eastwoo.houseutils.policy
@@ -16,6 +17,8 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class BrokerageRule {
     private Double brokeragePercentage;
+
+    @Nullable
     private Long limitAmount;
 
     public Long calcMaxBrokerage(Long price){
